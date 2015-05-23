@@ -6,7 +6,6 @@ from .models import Post
 
 
 class HomeViewTest(TestCase):
-
     def setUp(self):
         self.view = HomeView()
 
