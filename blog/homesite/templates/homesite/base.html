@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>BLOG</title>
+	</head>
+	<body>
+		<h1>Bem vindo ao meu Blog</h1>
+		{%block context%}
+			{% for post in posts%}
+			<h2><center>{{post.titulo}}</center></h2>
+			<center><p>{{post.descricao}}</center></p>
+			{%endfor%}
+		{%endblock%}
+	</body>
+</html>
