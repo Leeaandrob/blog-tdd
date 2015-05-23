@@ -16,3 +16,4 @@ class HomeView(TemplateView):
 class PostListView(ListView):
     template_name = 'homesite/posts.html'
     model = Post
+    context_object_name = 'posts'
